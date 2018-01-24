@@ -126,7 +126,7 @@ public class APIModuleDemo extends UZModule {
 	
 	/**
 	 * <strong>函数</strong><br><br>
-	 * 该函数映射至Javascript中moduleDemo对象的stopVibrate函数<br><br>
+	 * 该函数映射至Javascript中moduleDemo对象的f函数<br><br>
 	 * <strong>JS Example：</strong><br>
 	 * moduleDemo.stopVibrate(argument);
 	 * 

@@ -2,25 +2,32 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, initial-scale=1.0, width=device-width"/>
+    <meta name="viewport"
+          content="maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, initial-scale=1.0, width=device-width"/>
     <meta name="format-detection" content="telephone=no, email=no, date=no, address=no">
     <title>WinA</title>
-    <link rel="stylesheet" type="text/css" href="css/api.css" />
-    <link rel="stylesheet" type="text/css" href="css/box.css" />
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="css/box.css"/>
     <script type="text/javascript" src="script/public.js"></script>
     <style>
     	p{
     		color:#999;
     		padding:5px;
     	}
+
+
     </style>
-	<script type="text/javascript">
+    <script type="text/javascript">
 	    
 		var uzmoduledemo = null;
 		var scrollPicture = null;
+		var syncModule = null;
+		var cusHeader = null;
 		apiready = function(){
 	    	uzmoduledemo = api.require('moduleDemo');
 	    	scrollPicture = api.require('scrollPicture');
+	    	syncModule = api.require('syncModule');
+	    	cusHeader = api.require('cusHeader');
 	    }
 	    
 		function showAlert(){
@@ -55,7 +62,7 @@
 
 		function CMstartActivity(){
 			var param = {appParam:"Hello APICloud!"};
-	        api.require('ModuleC').startActivity(param);
+	        uzmoduledemo.startActivity(param);
 		}
 
 		function CMstartActivityForResult(){
@@ -63,7 +70,7 @@
 			var resultCallback = function(ret, err){
 				document.getElementById("activity_result").innerHTML = JSON.stringify(ret);
 			}
-	        api.require('ModuleC').startActivityForResult(param, resultCallback);
+	        uzmoduledemo.startActivityForResult(param, resultCallback);
 		}
 		
 		function vibrate(){
@@ -150,52 +157,62 @@
 			}
 		}
 	    
-	</script>
+
+
+    </script>
 </head>
 <body>
-    <div id="wrap">
-        <div id="main">
-        	<br>
-			<div class='itemtitle'>1、弹出对话框</div>
-				<div class="clickbtn" tapmode="active" onclick="showAlert()" >点击弹出</div>     
-			<div class='itemtitle'>2、启动Activity</div>
-				<div class="clickbtn" tapmode="active" onclick="startActivity()" >startActivity</div>
-				<div class="clickbtn" tapmode="active" onclick="startActivityForResult()" >startActivityForResult</div>
-				<div style="font-size:0.8em;">acticity返回值:</div>
-            	<div id="activity_result" style="width:100%;word-wrap: break-word;word-break: normal;"></div><br><br>
-			<div class='itemtitle'>3、调用设备震动</div>
-				<lable>设置震动时间，单位：毫秒</lable><br>
-				<input type="number" id="vibrate" value="20000" />
-				<div class="clickbtn" tapmode="active" onclick="vibrate()" >开始震动</div>
-				<div class="clickbtn" tapmode="active" onclick="stopVibrate()" >停止震动</div>
-			<div class='itemtitle'>4、自定义UI模块</div>
-				<div class="clickbtn" tapmode="active" onclick="addView()" >添加自定义View到当前Window</div> 
-				<div class="clickbtn" tapmode="active" onclick="removeView()" >从当前Window移除自定义View</div>     
-			<div class='itemtitle'>5、简单ScrollPicture模块</div>
-				<lable>输入ScrollPicture的宽度</lable><br>
-				<input type="number" id="sw" value="300"/>
-				<div class="clickbtn" tapmode="active" onclick="testopen()" >打开ScrollPicture</div>
-				<div class="clickbtn" tapmode="active" onclick="testclose()" >移除ScrollPicture</div>
-			<div class='itemtitle'>6、自定义简单的下拉刷新模块</div>
-				<div class="clickbtn" tapmode="active" onclick="toRefrash()" >直接进入下拉刷新</div>
-				<div class="clickbtn" tapmode="active" onclick="stopRefrash()" >退出下拉刷新</div> 
-				<div class="clickbtn" tapmode="active" onclick="setRefrashHeader()" >设置自定义下拉刷新模块</div>   
-			<div class='itemtitle'>7、同步接口</div>
-				<div class="clickbtn" tapmode="active" onclick="syncInterface(0)" >同步获取整数</div>
-				<div class="clickbtn" tapmode="active" onclick="syncInterface(1)" >同步获取小数</div>
-				<div class="clickbtn" tapmode="active" onclick="syncInterface(2)" >同步获取bool值</div>  
-				<div class="clickbtn" tapmode="active" onclick="syncInterface(3)" >同步获取字符串</div> 
-				<div class="clickbtn" tapmode="active" onclick="syncInterface(4)" >同步获取JSON对象</div>
-				<div class="clickbtn" tapmode="active" onclick="syncInterface(5)" >同步获取JSON数组对象</div>
-			<div class='itemtitle'>8、模块B弹出对话框</div>
-				<div class="clickbtn" tapmode="active" onclick="BMshowAlert()" >点击弹出</div>
-			<div class='itemtitle'>9、模块A自定义UI模块</div>
-				<div class="clickbtn" tapmode="active" onclick="AMaddView()" >添加自定义View到当前Window</div>
-			<div class='itemtitle'>10、模块C启动Activity</div>
-				<div class="clickbtn" tapmode="active" onclick="CMstartActivity()" >startActivity</div>
-				<div class="clickbtn" tapmode="active" onclick="CMstartActivityForResult()" >startActivityForResult</div>
-			<br>
-		</div>
-	</div>
+<div id="wrap">
+    <div id="main">
+        <br>
+        <div class='itemtitle'>1、弹出对话框</div>
+        <div class="clickbtn" tapmode="active" onclick="showAlert()">点击弹出</div>
+        <div class='itemtitle'>2、启动Activity</div>
+        <div class="clickbtn" tapmode="active" onclick="startActivity()">startActivity</div>
+        <div class="clickbtn" tapmode="active" onclick="startActivityForResult()">
+            startActivityForResult
+        </div>
+        <div style="font-size:0.8em;">acticity返回值:</div>
+        <div id="activity_result"
+             style="width:100%;word-wrap: break-word;word-break: normal;"></div>
+        <br><br>
+        <div class='itemtitle'>3、调用设备震动</div>
+        <lable>设置震动时间，单位：毫秒</lable>
+        <br>
+        <input type="number" id="vibrate" value="20000"/>
+        <div class="clickbtn" tapmode="active" onclick="vibrate()">开始震动</div>
+        <div class="clickbtn" tapmode="active" onclick="stopVibrate()">停止震动</div>
+        <div class='itemtitle'>4、自定义UI模块</div>
+        <div class="clickbtn" tapmode="active" onclick="addView()">添加自定义View到当前Window</div>
+        <div class="clickbtn" tapmode="active" onclick="removeView()">从当前Window移除自定义View</div>
+        <div class='itemtitle'>5、简单ScrollPicture模块</div>
+        <lable>输入ScrollPicture的宽度</lable>
+        <br>
+        <input type="number" id="sw" value="300"/>
+        <div class="clickbtn" tapmode="active" onclick="testopen()">打开ScrollPicture</div>
+        <div class="clickbtn" tapmode="active" onclick="testclose()">移除ScrollPicture</div>
+        <div class='itemtitle'>6、自定义简单的下拉刷新模块</div>
+        <div class="clickbtn" tapmode="active" onclick="toRefrash()">直接进入下拉刷新</div>
+        <div class="clickbtn" tapmode="active" onclick="stopRefrash()">退出下拉刷新</div>
+        <div class="clickbtn" tapmode="active" onclick="setRefrashHeader()">设置自定义下拉刷新模块</div>
+        <div class='itemtitle'>7、同步接口</div>
+        <div class="clickbtn" tapmode="active" onclick="syncInterface(0)">同步获取整数</div>
+        <div class="clickbtn" tapmode="active" onclick="syncInterface(1)">同步获取小数</div>
+        <div class="clickbtn" tapmode="active" onclick="syncInterface(2)">同步获取bool值</div>
+        <div class="clickbtn" tapmode="active" onclick="syncInterface(3)">同步获取字符串</div>
+        <div class="clickbtn" tapmode="active" onclick="syncInterface(4)">同步获取JSON对象</div>
+        <div class="clickbtn" tapmode="active" onclick="syncInterface(5)">同步获取JSON数组对象</div>
+        <div class='itemtitle'>8、模块B弹出对话框</div>
+        <div class="clickbtn" tapmode="active" onclick="BMshowAlert()">点击弹出</div>
+        <div class='itemtitle'>9、模块A自定义UI模块</div>
+        <div class="clickbtn" tapmode="active" onclick="AMaddView()">添加自定义View到当前Window</div>
+        <div class='itemtitle'>10、模块C启动Activity</div>
+        <div class="clickbtn" tapmode="active" onclick="CMstartActivity()">startActivity</div>
+        <div class="clickbtn" tapmode="active" onclick="CMstartActivityForResult()">
+            startActivityForResult
+        </div>
+        <br>
+    </div>
+</div>
 </body>
 </html>
