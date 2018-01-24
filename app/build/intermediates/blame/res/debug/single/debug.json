@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\androidSpace\\APiCloudDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_uz_icon.png.flat",
+        "source": "D:\\androidSpace\\APiCloudDemo\\app\\src\\main\\res\\drawable-xxhdpi\\uz_icon.png"
+    },
+    {
+        "merged": "D:\\androidSpace\\APiCloudDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mo_scrollpicture_img_switcher_bg.png.flat",
+        "source": "D:\\androidSpace\\APiCloudDemo\\moduleScrollPicture\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\mo_scrollpicture_img_switcher_bg.png"
+    },
+    {
+        "merged": "D:\\androidSpace\\APiCloudDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mo_scrollpicture_img_switcher_bg0.png.flat",
+        "source": "D:\\androidSpace\\APiCloudDemo\\moduleScrollPicture\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\mo_scrollpicture_img_switcher_bg0.png"
+    },
+    {
+        "merged": "D:\\androidSpace\\APiCloudDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_uz_splash_bg.png.flat",
+        "source": "D:\\androidSpace\\APiCloudDemo\\app\\src\\main\\res\\drawable-xxhdpi\\uz_splash_bg.png"
+    },
+    {
+        "merged": "D:\\androidSpace\\APiCloudDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mo_scrollpicture_img_switcher_bg2.png.flat",
+        "source": "D:\\androidSpace\\APiCloudDemo\\moduleScrollPicture\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\mo_scrollpicture_img_switcher_bg2.png"
+    },
+    {
+        "merged": "D:\\androidSpace\\APiCloudDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout_mo_demo_main_activity.xml.flat",
+        "source": "D:\\androidSpace\\APiCloudDemo\\moduleDemo\\build\\intermediates\\bundles\\debug\\res\\layout\\mo_demo_main_activity.xml"
+    },
+    {
+        "merged": "D:\\androidSpace\\APiCloudDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mo_scrollpicture_img_switcher_bg1.png.flat",
+        "source": "D:\\androidSpace\\APiCloudDemo\\moduleScrollPicture\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\mo_scrollpicture_img_switcher_bg1.png"
+    },
+    {
+        "merged": "D:\\androidSpace\\APiCloudDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mo_cus_refresh_default.png.flat",
+        "source": "D:\\androidSpace\\APiCloudDemo\\moduleRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\mo_cus_refresh_default.png"
+    },
+    {
+        "merged": "D:\\androidSpace\\APiCloudDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mo_scrollpicture_img_switcher_bg3.png.flat",
+        "source": "D:\\androidSpace\\APiCloudDemo\\moduleScrollPicture\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\mo_scrollpicture_img_switcher_bg3.png"
+    }
+]

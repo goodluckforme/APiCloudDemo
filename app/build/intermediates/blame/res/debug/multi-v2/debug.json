@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\androidSpace\\APiCloudDemo\\app\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\androidSpace\\APiCloudDemo\\app\\src\\main\\res\\values\\mo_engine_resources.xml",
+                    "from": {
+                        "startLines": "3,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "75,121",
+                        "endLines": "3,14",
+                        "endColumns": "41,12",
+                        "endOffsets": "112,710"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,97",
+                        "endLines": "2,12",
+                        "endColumns": "41,12",
+                        "endOffsets": "92,677"
+                    }
+                }
+            ]
+        }
+    ]
+}
