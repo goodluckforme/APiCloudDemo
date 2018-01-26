@@ -10,12 +10,12 @@ import com.jess.arms.di.scope.ActivityScope
 
 import javax.inject.Inject
 
-import apicloud.com.youxian.mvp.contract.MeContract
+import apicloud.com.youxian.mvp.contract.MainContract
 
 
 @ActivityScope
-class MeModel @Inject
-constructor(repositoryManager: IRepositoryManager, private var mGson: Gson?, private var mApplication: Application?) : BaseModel(repositoryManager), MeContract.Model {
+class MainModel @Inject
+constructor(repositoryManager: IRepositoryManager, private var mGson: Gson?, private var mApplication: Application?) : BaseModel(repositoryManager), MainContract.Model {
 
     override fun onDestroy() {
         super.onDestroy()

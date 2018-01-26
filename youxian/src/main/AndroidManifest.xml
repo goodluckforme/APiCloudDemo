@@ -3,20 +3,22 @@
     package="apicloud.com.youxian">
 
     <application
+        android:name="com.jess.arms.base.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:name="com.jess.arms.base.BaseApplication"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mvp.ui.activity.MeActivity">
+        <activity android:name=".mvp.ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".mvp.ui.activity.HomeActivity" />
+        <activity android:name=".mvp.ui.activity.AroundActivity" />
     </application>
 
 </manifest>
