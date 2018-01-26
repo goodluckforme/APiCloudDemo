@@ -4,10 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/APiCloudDemo.iml" filepath="$PROJECT_DIR$/APiCloudDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arms/arms.iml" filepath="$PROJECT_DIR$/arms/arms.iml" />
       <module fileurl="file://$PROJECT_DIR$/moduleDemo/moduleDemo.iml" filepath="$PROJECT_DIR$/moduleDemo/moduleDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/moduleRefresh/moduleRefresh.iml" filepath="$PROJECT_DIR$/moduleRefresh/moduleRefresh.iml" />
       <module fileurl="file://$PROJECT_DIR$/moduleScrollPicture/moduleScrollPicture.iml" filepath="$PROJECT_DIR$/moduleScrollPicture/moduleScrollPicture.iml" />
       <module fileurl="file://$PROJECT_DIR$/moduleSyncInterface/moduleSyncInterface.iml" filepath="$PROJECT_DIR$/moduleSyncInterface/moduleSyncInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/youxian/youxian.iml" filepath="$PROJECT_DIR$/youxian/youxian.iml" />
     </modules>
   </component>
 </project>

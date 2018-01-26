@@ -43,7 +43,13 @@ uses-sdk
 INJECTED from D:\androidSpace\APiCloudDemo\moduleDemo\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\androidSpace\APiCloudDemo\moduleDemo\src\main\AndroidManifest.xml
 INJECTED from D:\androidSpace\APiCloudDemo\moduleDemo\src\main\AndroidManifest.xml
+INJECTED from D:\androidSpace\APiCloudDemo\moduleDemo\src\main\AndroidManifest.xml
+INJECTED from D:\androidSpace\APiCloudDemo\moduleDemo\src\main\AndroidManifest.xml
 	android:targetSdkVersion
+		INJECTED from D:\androidSpace\APiCloudDemo\moduleDemo\src\main\AndroidManifest.xml
+		ADDED from D:\androidSpace\APiCloudDemo\moduleDemo\src\main\AndroidManifest.xml
+		INJECTED from D:\androidSpace\APiCloudDemo\moduleDemo\src\main\AndroidManifest.xml
+	android:minSdkVersion
 		INJECTED from D:\androidSpace\APiCloudDemo\moduleDemo\src\main\AndroidManifest.xml
 		ADDED from D:\androidSpace\APiCloudDemo\moduleDemo\src\main\AndroidManifest.xml
 		INJECTED from D:\androidSpace\APiCloudDemo\moduleDemo\src\main\AndroidManifest.xml

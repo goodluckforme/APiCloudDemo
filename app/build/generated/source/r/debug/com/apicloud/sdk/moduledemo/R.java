@@ -8,13 +8,13 @@ package com.apicloud.sdk.moduledemo;
 
 public final class R {
     public static final class id {
-        public static final int btn = 0x7f020000;
-        public static final int text = 0x7f020001;
+        public static final int btn = 0x7f070021;
+        public static final int text = 0x7f07006b;
     }
     public static final class layout {
-        public static final int mo_demo_main_activity = 0x7f030000;
+        public static final int mo_demo_main_activity = 0x7f09001b;
     }
     public static final class string {
-        public static final int app_name = 0x7f040000;
+        public static final int app_name = 0x7f0a001f;
     }
 }
