@@ -2,8 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="apicloud.com.youxian">
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
-        android:name="com.jess.arms.base.BaseApplication"
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -17,8 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".mvp.ui.activity.HomeActivity" />
-        <activity android:name=".mvp.ui.activity.AroundActivity" />
     </application>
 
 </manifest>
