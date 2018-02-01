@@ -22,7 +22,7 @@ import dagger.Provides;
 
 @Module
 public class AppModule {
-    private Context context;
+    public Context context;
 
     public AppModule(Context context) {
         this.context = context;

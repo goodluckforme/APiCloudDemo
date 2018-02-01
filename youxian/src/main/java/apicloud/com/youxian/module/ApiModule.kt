@@ -18,7 +18,6 @@
  */
 package apicloud.com.youxian.module
 
-import android.app.Application
 import apicloud.com.youxian.App
 import dagger.Module
 import dagger.Provides
@@ -27,7 +26,7 @@ import dagger.Provides
 class ApiModule {
 
     @Provides
-    fun provideBookService(): Application {
+    fun provideBookService(): App {
         return App.instance
     }
 }

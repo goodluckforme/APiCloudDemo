@@ -19,6 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".mvp.ui.activity.HelloActivity" />
+        <activity android:name=".mvp.ui.activity.HiActivity" />
+        <activity android:name=".mvp.ui.activity.BeautyActivity" />
+        <activity android:name=".mvp.ui.activity.HelpActivity" />
+        <activity android:name=".mvp.ui.activity.MoneyActivity"></activity>
     </application>
 
 </manifest>
