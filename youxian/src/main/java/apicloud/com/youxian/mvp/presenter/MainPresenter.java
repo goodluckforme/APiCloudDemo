@@ -7,15 +7,15 @@ import javax.inject.Inject;
 
 import apicloud.com.youxian.App;
 import apicloud.com.youxian.common.RxPresenter;
-import apicloud.com.youxian.mvp.contract.HelpContract;
+import apicloud.com.youxian.mvp.contract.MainContract;
 
-public class HelpPresenter extends RxPresenter<HelpContract.View> implements HelpContract.Presenter {
+public class MainPresenter extends RxPresenter<MainContract.View> implements MainContract.Presenter {
 
     private App app;
     private Context context;
 
     @Inject
-    public HelpPresenter(App app, Context context) {
+    public MainPresenter(App app, Context context) {
         super();
         this.app = app;
         this.context = context;

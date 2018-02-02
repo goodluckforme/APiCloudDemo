@@ -18,10 +18,6 @@
  */
 package apicloud.com.youxian.common
 
-/**
- * @author yuyh.
- * @date 16/8/6.
- */
 interface BaseContract {
 
     interface BasePresenter<T> {
@@ -32,8 +28,8 @@ interface BaseContract {
     }
 
     interface BaseView {
-        fun showError(msg: String="")
+        fun showError(msg: String = "")
 
-        fun complete(msg: String="")
+        fun complete(msg: String = "")
     }
 }

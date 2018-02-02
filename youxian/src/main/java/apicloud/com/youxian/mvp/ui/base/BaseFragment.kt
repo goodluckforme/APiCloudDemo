@@ -1,4 +1,4 @@
-package banyuekj.com.yiwushop.base.ui
+package apicloud.com.youxian.mvp.ui.base
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -6,11 +6,9 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import apicloud.com.youxian.App
 import apicloud.com.youxian.component.AppComponent
 
-/**
- * Created by MaQi on 2017/5/10.
- */
 
 abstract class BaseFragment : Fragment() {
 
@@ -19,27 +17,26 @@ abstract class BaseFragment : Fragment() {
     protected var rootView: View? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        if (null == rootView) rootView = View.inflate(context, getlayoutRes(), null)
+        if (null == rootView) rootView = View.inflate(context, getLayoutRes(), null)
         return rootView
     }
 
-    protected abstract fun getlayoutRes(): Int
+    protected abstract fun getLayoutRes(): Int
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         Log.i("test", "=============onViewCreated=============" + this)
         super.onViewCreated(view, savedInstanceState)
-//        setupActivityComponent(ShopApp.instance.appComponent)
+        setFragmentComponent(App.instance.appComponent)
         attachView()
         isViewPrepared = true
         lazyFetchDataIfPrepared()
     }
 
-
     abstract fun attachView()
 
     abstract fun detachView()
 
-    abstract fun setupActivityComponent(appComponent: AppComponent)
+    abstract fun setFragmentComponent(appComponent: AppComponent)
 
     override fun setUserVisibleHint(isVisibleToUser: Boolean) {
         super.setUserVisibleHint(isVisibleToUser)

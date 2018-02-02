@@ -16,9 +16,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package apicloud.com.youxian.module
+package apicloud.com.youxian.moudle
 
-import apicloud.com.youxian.App
+import apicloud.com.youxian.api.AppApi
 import dagger.Module
 import dagger.Provides
 
@@ -26,7 +26,7 @@ import dagger.Provides
 class ApiModule {
 
     @Provides
-    fun provideBookService(): App {
-        return App.instance
+    fun provideBookService(): AppApi {
+        return AppApi.instance
     }
 }

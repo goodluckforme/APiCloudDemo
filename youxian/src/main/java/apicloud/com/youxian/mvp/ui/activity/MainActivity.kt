@@ -6,7 +6,7 @@ import apicloud.com.youxian.component.AppComponent
 import apicloud.com.youxian.component.DaggerActivityComponent
 import apicloud.com.youxian.mvp.contract.MainContract
 import apicloud.com.youxian.mvp.presenter.MainPresenter
-import apicloud.com.youxian.mvp.ui.activity.base.BaseActivity
+import apicloud.com.youxian.mvp.ui.base.BaseActivity
 import javax.inject.Inject
 
 
@@ -14,7 +14,7 @@ class MainActivity : BaseActivity(), MainContract.View {
 
     @Inject lateinit var mainPresenter: MainPresenter
 
-    override fun setAppComponent(appComponent: AppComponent) {
+    override fun setActivityComponent(appComponent: AppComponent) {
         DaggerActivityComponent //如找不到该类,请编译一下项目
                 .builder()
                 .appComponent(appComponent)
@@ -28,7 +28,6 @@ class MainActivity : BaseActivity(), MainContract.View {
 
     }
 
-
     public override fun initData() {
 
     }
@@ -38,9 +37,9 @@ class MainActivity : BaseActivity(), MainContract.View {
         mainPresenter.detachView()
     }
 
-    override fun getLayoutRes(): Int {
-        return R.layout.activity_main
-    }
+
+    override fun getLayoutRes(): Int = R.layout.activity_main
+
 
     override fun complete(msg: String) {
 

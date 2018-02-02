@@ -1,4 +1,4 @@
-package apicloud.com.youxian.mvp.ui.activity.base
+package apicloud.com.youxian.mvp.ui.base
 
 import android.content.pm.ActivityInfo
 import android.os.Bundle
@@ -7,17 +7,15 @@ import apicloud.com.youxian.App
 import apicloud.com.youxian.component.AppComponent
 
 
-/**
- * Created by Administrator on 2017/11/21.
- */
 abstract class BaseActivity : AppCompatActivity() {
     var isFirst: Boolean = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(getLayoutRes())
+        //QMUIStatusBarHelper.translucent(this, Color.parseColor("#ffffff"))
         //竖屏设置
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
-        setAppComponent(App.instance.appComponent)
+        setActivityComponent(App.instance.appComponent)
         initView()
     }
 
@@ -30,7 +28,7 @@ abstract class BaseActivity : AppCompatActivity() {
 
     }
 
-    abstract fun setAppComponent(appComponent: AppComponent)
+    abstract fun setActivityComponent(appComponent: AppComponent)
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
@@ -49,4 +47,9 @@ abstract class BaseActivity : AppCompatActivity() {
 
 
     abstract fun getLayoutRes(): Int
+
+    override fun onDestroy() {
+        super.onDestroy()
+    }
+
 }

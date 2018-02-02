@@ -1,11 +1,14 @@
 /**
  * Copyright 2016 JustWayward Team
  * <p>
+ * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  * <p>
+ * <p>
  * http://www.apache.org/licenses/LICENSE-2.0
+ * <p>
  * <p>
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -25,6 +28,7 @@ import rx.subscriptions.CompositeSubscription;
  * 因为在 subscribe() 之后， Observable 会持有 Subscriber 的引用，
  * 这个引用如果不能及时被释放，将有内存泄露的风险。
  */
+
 public class RxPresenter<T extends BaseContract.BaseView> implements BaseContract.BasePresenter<T> {
 
     protected T mView;
@@ -53,5 +57,4 @@ public class RxPresenter<T extends BaseContract.BaseView> implements BaseContrac
         this.mView = null;
         unSubscribe();
     }
-
 }
