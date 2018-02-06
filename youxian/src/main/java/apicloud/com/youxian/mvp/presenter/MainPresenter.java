@@ -15,7 +15,7 @@ public class MainPresenter extends RxPresenter<MainContract.View> implements Mai
     private Context context;
 
     @Inject
-    public MainPresenter(AppApi app, Context context) {
+    public MainPresenter(AppApi appApi, Context context) {
         super();
         this.appApi = appApi;
         this.context = context;

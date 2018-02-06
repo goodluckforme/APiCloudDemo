@@ -19,8 +19,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".mvp.mvp.ui.activity.MainSSActivity" />
-        <activity android:name=".component.mvp.ui.activity.MainQAActivity"></activity>
+        <activity android:name=".mvp.ui.activity.MainADDActivity" />
+        <activity android:name=".mvp.ui.activity.HelpActivity" />
+        <activity android:name=".mvp.ui.activity.OKActivity" />
+        <activity android:name=".mvp.ui.activity.HelloActivity" />
+        <activity android:name=".mvp.ui.activity.MainKeyActivity" />
+        <activity android:name=".mvp.ui.activity.MainPPActivity" />
+        <activity android:name=".mvp.presenter.mvp.ui.activity.MainQQQQActivity" />
+        <activity android:name=".mvp.ui.activity.MainpppppActivity" />
+        <activity android:name=".mvp.ui.activity.MainTestActivity" />
+        <activity android:name=".mvp.ui.activity.MainTsetActivity" />
+        <activity android:name=".mvp.ui.activity.MainHaseActivity" />
+        <activity android:name=".mvp.ui.activity.MainHelloActivity" />
+        <activity android:name="apicloud.com.mvp.ui.activity.MainActivity" />
     </application>
 
 </manifest>

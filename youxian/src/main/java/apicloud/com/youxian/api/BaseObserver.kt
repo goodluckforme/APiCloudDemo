@@ -16,6 +16,7 @@ abstract class BaseObserver<T>(val context: Context) : Observer<HttpResult<T>> {
         val USERINFO = ""
     }
 
+
     override fun onNext(result: HttpResult<T>?) {
         when {
             result == null -> onRequestFail()
