@@ -1,8 +1,8 @@
-package apicloud.com.youxian.api
+package apicloud.com.youxian.mvp.api
 
 import android.content.Context
-import apicloud.com.youxian.data.HttpResult
-import apicloud.com.youxian.utils.SharedPreferencesUtil
+import apicloud.com.youxian.mvp.data.HttpResult
+import apicloud.com.youxian.mvp.utils.SharedPreferencesUtil
 import rx.Observer
 
 /**
@@ -15,6 +15,7 @@ abstract class BaseObserver<T>(val context: Context) : Observer<HttpResult<T>> {
         val FAILLOGIN = 210
         val USERINFO = ""
     }
+
 
     override fun onNext(result: HttpResult<T>?) {
         when {

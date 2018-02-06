@@ -16,18 +16,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package apicloud.com.youxian.moudle
+package apicloud.com.youxian.mvp.moudle;
 
-import apicloud.com.youxian.App
-import dagger.Module
-import dagger.Provides
-import apicloud.com.youxian.api.AppApi
+import android.content.Context;
+import dagger.Module;
+import dagger.Provides;
 
 @Module
-class ApiModule {
+public class AppModule {
+    public Context context;
+
+    public AppModule(Context context) {
+        this.context = context;
+    }
 
     @Provides
-    fun provideBookService(): AppApi {
-        return AppApi.instance
+    public Context provideContext() {
+        return context;
     }
 }

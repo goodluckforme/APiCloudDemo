@@ -19,12 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".mvp.ui.activity.ShengQiangActivity" />
-        <activity android:name=".mvp.ui.activity.MainSSActivity" />
-        <activity android:name=".mvp.ui.activity.MainSSSActivity" />
-        <activity android:name=".mvp.ui.activity.MainWWWWActivity" />
-        <activity android:name=".mvp.ui.activity.MainSDWSActivity" />
-        <activity android:name=".mvp.ui.activity.MainIOOActivity" />
+        <activity android:name=".mvp.mvp.ui.activity.MainSSActivity" />
+        <activity android:name=".component.mvp.ui.activity.MainQAActivity"></activity>
     </application>
 
 </manifest>

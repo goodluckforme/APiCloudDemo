@@ -16,18 +16,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package apicloud.com.youxian.moudle
+package apicloud.com.youxian.component.common
 
-import apicloud.com.youxian.App
-import dagger.Module
-import dagger.Provides
-import apicloud.com.youxian.api.AppApi
+interface BaseContract {
 
-@Module
-class ApiModule {
+    interface BasePresenter<T> {
 
-    @Provides
-    fun provideBookService(): AppApi {
-        return AppApi.instance
+        fun attachView(view: T)
+
+        fun detachView()
+    }
+
+    interface BaseView {
+        fun showError(msg: String = "")
+
+        fun complete(msg: String = "")
     }
 }

@@ -1,4 +1,4 @@
-package apicloud.com.youxian.mvp.ui.base
+package apicloud.com.youxian.component.mvp.ui.base
 
 import android.os.Bundle
 import android.content.pm.ActivityInfo

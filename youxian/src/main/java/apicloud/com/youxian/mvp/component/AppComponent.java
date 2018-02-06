@@ -1,11 +1,12 @@
-package apicloud.com.youxian.component;
+package apicloud.com.youxian.mvp.component;
+
+import apicloud.com.youxian.moudle.AppModule;
+import apicloud.com.youxian.moudle.ApiModule;
+import dagger.Component;
 
 import android.content.Context;
 
-import apicloud.com.youxian.api.AppApi;
-import apicloud.com.youxian.moudle.ApiModule;
-import apicloud.com.youxian.moudle.AppModule;
-import dagger.Component;
+import apicloud.com.youxian.mvp.api.AppApi;
 
 @Component(modules = {AppModule.class, ApiModule.class})
 public interface AppComponent {

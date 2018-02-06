@@ -16,12 +16,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package apicloud.com.youxian.moudle
+package apicloud.com.youxian.mvp.moudle
 
-import apicloud.com.youxian.App
+import apicloud.com.youxian.mvp.App
 import dagger.Module
 import dagger.Provides
-import apicloud.com.youxian.api.AppApi
+import apicloud.com.youxian.mvp.api.AppApi
 
 @Module
 class ApiModule {
