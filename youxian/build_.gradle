@@ -11,7 +11,7 @@ android {
     compileSdkVersion 27
     buildToolsVersion "26.0.3"
     defaultConfig {
-        applicationId "apicloud.com"
+        applicationId "com.apicloud.pkg.sdk"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 101
@@ -20,17 +20,17 @@ android {
     }
     signingConfigs {
         debug {
-            storeFile file("$rootDir/apicloud.com.jks")
-            storePassword "apicloud.com"
-            keyAlias "apicloud.com"
-            keyPassword "apicloud.com"
+            storeFile file("$rootDir/com.apicloud.pkg.sdk.jks")
+            storePassword "com.apicloud.pkg.sdk"
+            keyAlias "com.apicloud.pkg.sdk"
+            keyPassword "com.apicloud.pkg.sdk"
         }
 
         release {
-            storeFile file("$rootDir/apicloud.com.jks")
-            storePassword "apicloud.com"
-            keyAlias "apicloud.com"
-            keyPassword "apicloud.com"
+            storeFile file("$rootDir/com.apicloud.pkg.sdk.jks")
+            storePassword "com.apicloud.pkg.sdk"
+            keyAlias "com.apicloud.pkg.sdk"
+            keyPassword "com.apicloud.pkg.sdk"
         }
     }
     buildTypes {
@@ -43,7 +43,7 @@ android {
             //apk命名
             android.applicationVariants.all { variant ->
                 variant.outputs.all { output ->
-                	outputFileName = "apicloud.com-${variant.name}-${variant.versionName}-${releaseTime()}.apk"
+                	outputFileName = "com.apicloud.pkg.sdk-${variant.name}-${variant.versionName}-${releaseTime()}.apk"
                 }
             }
         }

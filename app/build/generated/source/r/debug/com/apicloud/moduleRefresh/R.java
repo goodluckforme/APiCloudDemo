@@ -11,6 +11,6 @@ public final class R {
         public static final int mo_cus_refresh_default = 0x7f060053;
     }
     public static final class string {
-        public static final int app_name = 0x7f0a001f;
+        public static final int app_name = 0x7f0a001d;
     }
 }
