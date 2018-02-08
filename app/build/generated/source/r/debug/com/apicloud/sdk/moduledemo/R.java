@@ -9,7 +9,7 @@ package com.apicloud.sdk.moduledemo;
 public final class R {
     public static final class id {
         public static final int btn = 0x7f070020;
-        public static final int text = 0x7f070067;
+        public static final int text = 0x7f07006a;
     }
     public static final class layout {
         public static final int mo_demo_main_activity = 0x7f09001c;

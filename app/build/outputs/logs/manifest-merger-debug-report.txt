@@ -4,12 +4,16 @@ ADDED from D:\androidSpace\APiCloudDemo\app\src\main\AndroidManifest.xml:2:1-56:
 INJECTED from D:\androidSpace\APiCloudDemo\app\src\main\AndroidManifest.xml:2:1-56:12
 INJECTED from D:\androidSpace\APiCloudDemo\app\src\main\AndroidManifest.xml:2:1-56:12
 INJECTED from D:\androidSpace\APiCloudDemo\app\src\main\AndroidManifest.xml:2:1-56:12
+MERGED from [com.android.databinding:adapters:1.3.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\adapters-1.3.1.aar\14f78fe4b6fc151f4597dd81c2dd4720\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.databinding:library:1.3.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\library-1.3.1.aar\e07b0d3b1771601fb8ccd37811ed011b\AndroidManifest.xml:17:1-26:12
 MERGED from [:moduleDemo] D:\androidSpace\APiCloudDemo\moduleDemo\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-22:12
 MERGED from [:moduleScrollPicture] D:\androidSpace\APiCloudDemo\moduleScrollPicture\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:moduleSyncInterface] D:\androidSpace\APiCloudDemo\moduleSyncInterface\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:moduleRefresh] D:\androidSpace\APiCloudDemo\moduleRefresh\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\f2daeab7b8b147102a5a4854cf34b611\AndroidManifest.xml:17:1-22:12
 MERGED from [io.reactivex:rxandroid:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxandroid-1.1.0.aar\369a6ecf3e7860aeeb9dc7455d44b42c\AndroidManifest.xml:15:1-21:12
+MERGED from [com.android.support:multidex:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\multidex-1.0.0.aar\227b11002f93b9a878f982d8364579b7\AndroidManifest.xml:16:1-19:12
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.3.aar\6bd78c6b83d77588a07a71dc05b93b21\AndroidManifest.xml:14:4-17:12
 MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\54e93aa63402155dff8f1afe236c03db\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\34ce56255f3941315fe5be4dcb7b00e4\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\e9c0c7bcd0d53adf2692dc78e4321dd9\AndroidManifest.xml:17:1-22:12
@@ -40,6 +44,10 @@ uses-sdk
 ADDED from D:\androidSpace\APiCloudDemo\app\src\main\AndroidManifest.xml:8:5-10:41
 INJECTED from D:\androidSpace\APiCloudDemo\app\src\main\AndroidManifest.xml:8:5-10:41
 INJECTED from D:\androidSpace\APiCloudDemo\app\src\main\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.databinding:adapters:1.3.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\adapters-1.3.1.aar\14f78fe4b6fc151f4597dd81c2dd4720\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:adapters:1.3.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\adapters-1.3.1.aar\14f78fe4b6fc151f4597dd81c2dd4720\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:library:1.3.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\library-1.3.1.aar\e07b0d3b1771601fb8ccd37811ed011b\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:library:1.3.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\library-1.3.1.aar\e07b0d3b1771601fb8ccd37811ed011b\AndroidManifest.xml:22:5-24:41
 MERGED from [:moduleDemo] D:\androidSpace\APiCloudDemo\moduleDemo\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:moduleDemo] D:\androidSpace\APiCloudDemo\moduleDemo\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:moduleScrollPicture] D:\androidSpace\APiCloudDemo\moduleScrollPicture\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
@@ -52,6 +60,10 @@ MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Administrator\.gr
 MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\f2daeab7b8b147102a5a4854cf34b611\AndroidManifest.xml:20:5-44
 MERGED from [io.reactivex:rxandroid:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxandroid-1.1.0.aar\369a6ecf3e7860aeeb9dc7455d44b42c\AndroidManifest.xml:19:5-43
 MERGED from [io.reactivex:rxandroid:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxandroid-1.1.0.aar\369a6ecf3e7860aeeb9dc7455d44b42c\AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:multidex:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\multidex-1.0.0.aar\227b11002f93b9a878f982d8364579b7\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:multidex:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\multidex-1.0.0.aar\227b11002f93b9a878f982d8364579b7\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.3.aar\6bd78c6b83d77588a07a71dc05b93b21\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.3.aar\6bd78c6b83d77588a07a71dc05b93b21\AndroidManifest.xml:15:5-42
 MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\54e93aa63402155dff8f1afe236c03db\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\54e93aa63402155dff8f1afe236c03db\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\34ce56255f3941315fe5be4dcb7b00e4\AndroidManifest.xml:20:5-44
@@ -128,6 +140,8 @@ MERGED from [:moduleSyncInterface] D:\androidSpace\APiCloudDemo\moduleSyncInterf
 MERGED from [:moduleSyncInterface] D:\androidSpace\APiCloudDemo\moduleSyncInterface\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-15:19
 MERGED from [:moduleRefresh] D:\androidSpace\APiCloudDemo\moduleRefresh\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-15:19
 MERGED from [:moduleRefresh] D:\androidSpace\APiCloudDemo\moduleRefresh\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.3.aar\6bd78c6b83d77588a07a71dc05b93b21\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.3.aar\6bd78c6b83d77588a07a71dc05b93b21\AndroidManifest.xml:16:5-19
 	android:supportsRtl
 		ADDED from [:moduleDemo] D:\androidSpace\APiCloudDemo\moduleDemo\build\intermediates\manifests\full\debug\AndroidManifest.xml:14:9-35
 	android:label

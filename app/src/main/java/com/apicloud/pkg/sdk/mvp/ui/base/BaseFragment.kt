@@ -1,5 +1,7 @@
 package com.apicloud.pkg.sdk.mvp.ui.base
 
+import android.databinding.DataBindingUtil
+import android.databinding.ViewDataBinding
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.util.Log
@@ -10,15 +12,16 @@ import com.apicloud.pkg.sdk.App
 import com.apicloud.pkg.sdk.component.AppComponent
 
 
-abstract class BaseFragment : Fragment() {
-
+abstract class BaseFragment<T : ViewDataBinding> : Fragment() {
     var isViewPrepared: Boolean = false
     var hasFetchData: Boolean = false
-    protected var rootView: View? = null
-
+    //protected var rootView: View? = null
+    protected var binding: T?=null
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        if (null == rootView) rootView = View.inflate(context, getLayoutRes(), null)
-        return rootView
+        if (null == binding) {
+            binding = DataBindingUtil.inflate(inflater, getLayoutRes(), container, false)
+        }
+        return binding?.root
     }
 
     protected abstract fun getLayoutRes(): Int

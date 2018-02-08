@@ -1,18 +1,20 @@
 package com.apicloud.pkg.sdk.mvp.ui.base
 
-import android.os.Bundle
 import android.content.pm.ActivityInfo
+import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.apicloud.pkg.sdk.App
+import com.apicloud.pkg.sdk.common.BaseContract
+import com.apicloud.pkg.sdk.common.RxPresenter
 import com.apicloud.pkg.sdk.component.AppComponent
-import org.jetbrains.anko.sdk25.coroutines.onClick
+import javax.inject.Inject
 
 
-abstract class BaseActivity : AppCompatActivity() {
+abstract class BaseActivity<T : RxPresenter<V>, V : BaseContract.BaseView> : AppCompatActivity(), BaseContract.BaseView {
     var isFirst: Boolean = false
+    @Inject lateinit var mPresenter: T
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(getLayoutRes())
         //QMUIStatusBarHelper.translucent(this, Color.parseColor("#ffffff"))
         //竖屏设置
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
@@ -20,14 +22,6 @@ abstract class BaseActivity : AppCompatActivity() {
         initView()
     }
 
-    /**
-     * 设置标题
-     *
-     * @param title
-     */
-    fun setTitleId(stringId: Int) {
-
-    }
 
     abstract fun setActivityComponent(appComponent: AppComponent)
 
@@ -40,17 +34,13 @@ abstract class BaseActivity : AppCompatActivity() {
     }
 
     protected open fun initView() {
-
     }
 
     protected open fun initData() {
     }
 
-
-    abstract fun getLayoutRes(): Int
-
     override fun onDestroy() {
         super.onDestroy()
+        mPresenter.detachView()
     }
-
 }

@@ -67,6 +67,9 @@ android {
             dirs 'libs'
         }
     }
+    dataBinding {
+        enabled true
+    }
 }
 kapt {
     generateStubs = true
@@ -74,10 +77,10 @@ kapt {
 
 dependencies {
     //4个模块
-    compile project(':moduleDemo')
-    compile project(':moduleScrollPicture')
-    compile project(':moduleSyncInterface')
-    compile project(':moduleRefresh')
+//    compile project(':moduleDemo')
+//    compile project(':moduleScrollPicture')
+//    compile project(':moduleSyncInterface')
+//    compile project(':moduleRefresh')
 
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     // Kotlin
@@ -127,5 +130,5 @@ dependencies {
 //    implementation 'cn.bingoogolapple:bga-qrcodecore:1.1.9@aar'
 //    implementation 'cn.bingoogolapple:bga-zxing:1.1.9@aar'
 //    //分包
-//    implementation 'com.android.support:multidex:1.0.0'
+    implementation 'com.android.support:multidex:1.0.0'
 }
