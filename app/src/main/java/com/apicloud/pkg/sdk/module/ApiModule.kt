@@ -16,22 +16,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.apicloud.pkg.sdk.moudle;
+package com.apicloud.pkg.sdk.module
 
-import android.content.Context;
-import dagger.Module;
-import dagger.Provides;
+import dagger.Module
+import dagger.Provides
+import com.apicloud.pkg.sdk.api.AppApi
 
 @Module
-public class AppModule {
-    public Context context;
-
-    public AppModule(Context context) {
-        this.context = context;
-    }
+class ApiModule {
 
     @Provides
-    public Context provideContext() {
-        return context;
+    fun provideBookService(): AppApi {
+        return AppApi.instance
     }
 }

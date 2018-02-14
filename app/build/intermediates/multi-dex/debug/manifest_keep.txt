@@ -1,3 +1,0 @@
-# Referenced at D:\androidSpace\APiCloudDemo\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:26
--keep class com.uzmap.pkg.uzapp.UZApplication { <init>(...); }
-

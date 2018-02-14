@@ -1,1 +1,2 @@
-include ':moduleScrollPicture', ':moduleRefresh', ':moduleDemo', ':moduleSyncInterface', ':app'
+//include ':moduleScrollPicture', ':moduleRefresh', ':moduleDemo', ':moduleSyncInterface'
+include ':app'

@@ -16,7 +16,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.apicloud.pkg.sdk.moudle;
+package com.apicloud.pkg.sdk.module;
 
 
 import com.apicloud.pkg.sdk.databinding.ActivityMainBinding;
@@ -33,7 +33,7 @@ public class ActivityMainBindingModule {
     }
 
     @Provides
-    public ActivityMainBinding ActivityMainBinding() {
+    public ActivityMainBinding provideActivityMainBinding() {
         return viewDataBinding;
     }
 }

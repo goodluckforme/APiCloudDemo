@@ -8,7 +8,7 @@ def releaseTime() {
 }
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 26
     buildToolsVersion "26.0.3"
     defaultConfig {
         applicationId "com.apicloud.pkg.sdk"
@@ -43,7 +43,7 @@ android {
             //apk命名
             android.applicationVariants.all { variant ->
                 variant.outputs.all { output ->
-                	outputFileName = "com.apicloud.pkg.sdk-${variant.name}-${variant.versionName}-${releaseTime()}.apk"
+                    outputFileName = "com.apicloud.pkg.sdk-${variant.name}-${variant.versionName}-${releaseTime()}.apk"
                 }
             }
         }
@@ -67,21 +67,17 @@ android {
             dirs 'libs'
         }
     }
+
     dataBinding {
         enabled true
     }
+
 }
 kapt {
     generateStubs = true
 }
 
 dependencies {
-    //4个模块
-//    compile project(':moduleDemo')
-//    compile project(':moduleScrollPicture')
-//    compile project(':moduleSyncInterface')
-//    compile project(':moduleRefresh')
-
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
@@ -90,11 +86,12 @@ dependencies {
     //kapt rootProject.ext.dependencies["dagger2-compiler"]
     kapt 'com.google.dagger:dagger-compiler:2.5'
     compile 'com.google.dagger:dagger:2.5'
-    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
     // Rx
     implementation 'io.reactivex:rxandroid:1.1.0'
     implementation 'io.reactivex:rxjava:1.1.5'
-
+    //DataBind
+    kapt "com.android.databinding:compiler:2.3.0"
     //网络框架
     implementation 'com.squareup.retrofit2:retrofit:2.1.0'
     implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.1'
@@ -130,5 +127,5 @@ dependencies {
 //    implementation 'cn.bingoogolapple:bga-qrcodecore:1.1.9@aar'
 //    implementation 'cn.bingoogolapple:bga-zxing:1.1.9@aar'
 //    //分包
-    implementation 'com.android.support:multidex:1.0.0'
+//    implementation 'com.android.support:multidex:1.0.0'
 }
