@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.apicloud.pkg.sdk">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -34,6 +35,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".mvp.ui.activity.TestActivity" />
+        <activity android:name=".mvp.ui.activity.NameActivity" />
+        <activity android:name=".mvp.ui.activity.HelloActivity" />
         <activity android:name=".mvp.ui.activity.MainActivity" />
     </application>
 
