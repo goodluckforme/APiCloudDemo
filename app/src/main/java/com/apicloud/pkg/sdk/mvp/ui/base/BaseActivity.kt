@@ -11,7 +11,9 @@ import javax.inject.Inject
 
 abstract class BaseActivity<T : RxPresenter<V>, V : BaseContract.BaseView> : AppCompatActivity(), BaseContract.BaseView {
     var isFirst: Boolean = false
-    @Inject lateinit var mPresenter: T
+    @Inject
+    lateinit var mPresenter: T
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //QMUIStatusBarHelper.translucent(this, Color.parseColor("#ffffff"))

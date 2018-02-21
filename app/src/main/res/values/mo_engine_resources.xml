@@ -3,7 +3,7 @@
 
     <string name="app_name">模块开发</string>
 
-    <style name="AppTheme" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">false</item>
         <item name="android:windowBackground">@android:color/white</item>

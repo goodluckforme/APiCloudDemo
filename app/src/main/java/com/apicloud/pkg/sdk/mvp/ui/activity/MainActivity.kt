@@ -16,9 +16,15 @@ class MainActivity : BaseActivity<MainPresenter, MainContract.View>(), MainContr
         DaggerMainComponent //如找不到该类,请编译一下项目
                 .builder()
                 .appComponent(appComponent)
-                .activityMainBindingModule(ActivityMainBindingModule(DataBindingUtil.setContentView(this, R.layout.activity_main)))
+                //.activityMainBindingModule(
+                //          ActivityMainBindingModule()
+                //                  .apply {
+                //                      viewDataBinding = DataBindingUtil
+                //                              .setContentView(this@MainActivity, R.layout.activity_main)
+                //                  })
                 .build()
                 .inject(this)
+        DataBindingUtil.setContentView<ActivityMainBinding>(this@MainActivity, R.layout.activity_main)
     }
 
     public override fun initView() {
