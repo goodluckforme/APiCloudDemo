@@ -1,5 +1,7 @@
 package com.apicloud.pkg.sdk.mvp.ui.base
 
+import android.databinding.DataBindingUtil
+import android.databinding.ViewDataBinding
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.util.Log
@@ -7,18 +9,23 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.apicloud.pkg.sdk.App
+import com.apicloud.pkg.sdk.common.BaseContract
+import com.apicloud.pkg.sdk.common.RxPresenter
 import com.apicloud.pkg.sdk.component.AppComponent
+import javax.inject.Inject
 
-
-abstract class BaseFragment : Fragment() {
+abstract class BaseFragment<T : RxPresenter<V, M>, V : BaseContract.BaseView, M : ViewDataBinding> : Fragment() {
 
     var isViewPrepared: Boolean = false
     var hasFetchData: Boolean = false
-    protected var rootView: View? = null
+    @Inject lateinit var mPresenter: T
+    protected var mDataBinding: M? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        if (null == rootView) rootView = View.inflate(activity, getLayoutRes(), null)
-        return rootView
+        if (null == mDataBinding) {
+            mDataBinding = DataBindingUtil.inflate(inflater, getLayoutRes(), container, false)
+        }
+        return mDataBinding?.root
     }
 
     protected abstract fun getLayoutRes(): Int

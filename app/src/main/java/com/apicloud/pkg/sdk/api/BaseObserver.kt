@@ -22,7 +22,7 @@ abstract class BaseObserver<T>(val context: Context) : Observer<HttpResult<T>> {
             result == null -> onRequestFail()
             result.result == SUCCESS -> onNetSuccess(result.datas)
             result.result == FAILLOGIN -> {
-                SharedPreferencesUtil.getInstance().remove(USERINFO)
+                SharedPreferencesUtil.instance?.remove(USERINFO)
                 onRequestFail(Throwable("$FAILLOGIN"))
             }
             else -> onRequestFail(Throwable(result.msg))

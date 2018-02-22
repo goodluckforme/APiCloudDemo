@@ -42,6 +42,10 @@
         <activity android:name=".mvp.ui.activity.HelloActivity" />
         <activity android:name=".mvp.ui.activity.HIActivity" />
         <activity android:name=".mvp.ui.activity.MuchActivity" />
+        <activity android:name=".mvp.ui.activity.ShowActivity" />
+        <activity android:name=".mvp.ui.activity.EndActivity" />
+        <activity android:name=".mvp.ui.activity.StartActivity" />
+        <activity android:name=".mvp.ui.activity.PageActivity" />
     </application>
 
 </manifest>

@@ -1,15 +1,15 @@
 /**
  * Copyright 2016 JustWayward Team
- * <p>
- * <p>
+ *
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * <p>
- * <p>
+ *
+ *
  * http://www.apache.org/licenses/LICENSE-2.0
- * <p>
- * <p>
+ *
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -18,8 +18,11 @@
  */
 package com.apicloud.pkg.sdk.common;
 
-import rx.Subscription;
-import rx.subscriptions.CompositeSubscription;
+
+import android.databinding.ViewDataBinding
+
+import rx.Subscription
+import rx.subscriptions.CompositeSubscription
 
 /**
  * Created by lfh on 2016/9/11.
@@ -29,32 +32,31 @@ import rx.subscriptions.CompositeSubscription;
  * 这个引用如果不能及时被释放，将有内存泄露的风险。
  */
 
-public class RxPresenter<T extends BaseContract.BaseView> implements BaseContract.BasePresenter<T> {
+open class RxPresenter<T : BaseContract.BaseView, M : ViewDataBinding> : BaseContract.BasePresenter<T, M> {
 
-    protected T mView;
-    protected CompositeSubscription mCompositeSubscription;
-
-    protected void unSubscribe() {
-        if (mCompositeSubscription != null) {
-            mCompositeSubscription.unsubscribe();
-        }
+    protected lateinit var mView: T
+    protected lateinit var mContentView: M
+    protected val mCompositeSubscription: CompositeSubscription by lazy {
+        CompositeSubscription()
     }
 
-    protected void addSubscrebe(Subscription subscription) {
-        if (mCompositeSubscription == null) {
-            mCompositeSubscription = new CompositeSubscription();
-        }
-        mCompositeSubscription.add(subscription);
+    protected fun unSubscribe() {
+        mCompositeSubscription.unsubscribe()
     }
 
-    @Override
-    public void attachView(T view) {
-        this.mView = view;
+    protected fun addSubscrebe(subscription: Subscription) {
+        mCompositeSubscription.add(subscription)
     }
 
-    @Override
-    public void detachView() {
-        this.mView = null;
-        unSubscribe();
+    override fun attachView(view: T) {
+        this.mView = view
+    }
+
+    override fun getLayoutRes(contentView: M) {
+        this.mContentView = contentView
+    }
+
+    override fun detachView() {
+        unSubscribe()
     }
 }
