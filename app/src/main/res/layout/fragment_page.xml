@@ -1,18 +1,35 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
+        <import type="android.view.View" />
+
+        <import type="com.apicloud.pkg.sdk.data.EndModel" />
+
         <import type="com.apicloud.pkg.sdk.mvp.presenter.PagePresenter.PageModel" />
+
+        <import type="com.apicloud.pkg.sdk.utils.UtilsKt" />
 
         <variable
             name="pageModel"
             type="PageModel" />
 
-        <import type="com.apicloud.pkg.sdk.data.EndModel" />
+        <variable
+            name="adapter"
+            type="android.support.v7.widget.RecyclerView.Adapter" />
+
+        <variable
+            name="layoutManager"
+            type="android.support.v7.widget.RecyclerView.LayoutManager" />
 
         <variable
             name="endModel"
             type="EndModel" />
+
+        <variable
+            name="imageUrl"
+            type="String" />
     </data>
 
     <LinearLayout
@@ -21,14 +38,38 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{String.valueOf(endModel.time)}" />
+            android:visibility="@{endModel.showView?View.VISIBLE:View.GONE}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/nameFormat(endModel.result,String.valueOf(endModel.time))}"
+            android:visibility="@{next.visibility}"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{UtilsKt.long2Data(endModel.time)}"></TextView>
 
         <Button
             android:id="@+id/change_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@{endModel.showRed?@color/color_999999 : @color/color_FF244F}"
             android:text="@{endModel.result}" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:image="@{imageUrl}" />
+
+        <com.aspsine.irecyclerview.IRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:adapter="@{adapter}"
+            app:layoutManager="@{layoutManager}" />
     </LinearLayout>
 </layout>

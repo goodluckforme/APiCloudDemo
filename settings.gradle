@@ -1,2 +1,2 @@
 //include ':moduleScrollPicture', ':moduleRefresh', ':moduleDemo', ':moduleSyncInterface'
-include ':app'
+include ':app', ':irecyclerview'

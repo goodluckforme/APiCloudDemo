@@ -8,7 +8,7 @@ import com.apicloud.pkg.sdk.mvp.contract.PageContract
 import com.apicloud.pkg.sdk.mvp.presenter.PagePresenter
 import com.apicloud.pkg.sdk.mvp.ui.base.BaseFragment
 
-class PageFragment : BaseFragment<PagePresenter, PageContract.View, FragmentPageBinding>(), PageContract.View {
+class   PageFragment : BaseFragment<PagePresenter, PageContract.View, FragmentPageBinding>(), PageContract.View {
 
     companion object {
         fun newInstance(): PageFragment {

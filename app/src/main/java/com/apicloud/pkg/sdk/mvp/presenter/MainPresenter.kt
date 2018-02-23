@@ -15,7 +15,6 @@ class MainPresenter @Inject constructor(private val appApi: AppApi, private val 
     fun toInit() {
         mContentView.setMainModel(MainModel())
         mContentView.userInfo = UserInfo("马齐", "18", "188")
-
     }
 
     inner class MainModel

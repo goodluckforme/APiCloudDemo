@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/APiCloudDemo.iml" filepath="$PROJECT_DIR$/APiCloudDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/irecyclerview/irecyclerview.iml" filepath="$PROJECT_DIR$/irecyclerview/irecyclerview.iml" />
       <module fileurl="file://F:\AndroidWorkSpace\APiCloudDemo\moduleDemo\moduleDemo.iml" filepath="F:\AndroidWorkSpace\APiCloudDemo\moduleDemo\moduleDemo.iml" />
       <module fileurl="file://F:\AndroidWorkSpace\APiCloudDemo\moduleRefresh\moduleRefresh.iml" filepath="F:\AndroidWorkSpace\APiCloudDemo\moduleRefresh\moduleRefresh.iml" />
       <module fileurl="file://F:\AndroidWorkSpace\APiCloudDemo\moduleScrollPicture\moduleScrollPicture.iml" filepath="F:\AndroidWorkSpace\APiCloudDemo\moduleScrollPicture\moduleScrollPicture.iml" />
