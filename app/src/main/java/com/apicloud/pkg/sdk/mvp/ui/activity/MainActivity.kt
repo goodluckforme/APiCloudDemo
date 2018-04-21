@@ -1,5 +1,6 @@
 package com.apicloud.pkg.sdk.mvp.ui.activity
 
+import android.databinding.DataBindingComponent
 import android.databinding.DataBindingUtil
 import com.apicloud.pkg.sdk.R
 import com.apicloud.pkg.sdk.component.AppComponent
